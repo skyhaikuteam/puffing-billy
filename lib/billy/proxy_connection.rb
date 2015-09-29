@@ -114,6 +114,7 @@ module Billy
       req_opts = {
         :redirects => 0,
         :keepalive => false,
+        :decoding => Billy.config.decoding,
         :head => headers,
         :ssl => { :verify => false }
       }
